@@ -1,13 +1,13 @@
 import React from "react";
 
-function Button({ bgColor, color, size, borderRadius }) {
+function Button({ bgColor, color, size, borderRadius, text }) {
   return (
     <button
       type="button"
       style={{ backgroundColor: bgColor, color, borderRadius }}
       className={`text-${size} p-3 hover:drop-shadow-xl `}
     >
-      Download
+      {text}
     </button>
   );
 }
